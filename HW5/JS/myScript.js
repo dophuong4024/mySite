@@ -123,3 +123,8 @@ function createTable(x1,x2,y1,y2) {
   document.getElementById('container').innerHTML = table;
 
   }
+
+
+function removeTable(){
+    document.getElementById('container').innerHTML = "";
+}
