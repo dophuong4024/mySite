@@ -1,0 +1,97 @@
+/*
+ File: /pdo@cs2:~/CSS/style.css
+ 91.461 Assignment - Homework 5: Creating an Interactive Dynamic Table
+Phuong N. Do, UMass Lowell Computer Science, phuong_do@student.uml.edu
+ Copyright (c) 2020 by Phuong N.Do. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+ updated by PND on October 27, 2020 at 12:10 PM
+*/
+/*General setting for body and information*/
+body {
+  background-color: #53acac;
+  margin: 40px 80px;
+}
+
+label {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+ul{
+  font-size: 18px;
+}
+/*Input boxes and button*/
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=button] {
+  margin-top: 15px;
+  background-color: #53acac;
+  font-weight: bold;
+}
+
+/*container of form + multiplication table*/
+fieldset {
+  background-color: #eeeeee;
+  width: auto;
+  position: relative;
+}
+
+legend {
+  background-color: Teal;
+  color: white;
+  font-weight: bolder;
+  padding: 5px 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: 2px Turquoise solid;
+}
+
+/*Error position and font setting*/
+span{
+    padding-left: 20px;
+    font-size: 15px;
+    color: red;
+}
+
+/*Table and data setting*/
+table{
+  table-layout: inherit;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 40px;
+  width: 50;
+  position: relative;
+}
+
+td.table_header:nth-child(n+1) {
+ background-color:#53acac	;
+ font-weight: bold;
+ border-right: 2px solid black;
+
+}
+td{
+border: 1px solid black;
+background-color: #eeeeee;
+}
+
+tr, td {
+    padding-left: 20px;
+}
+/* Remove first box of Table*/
+#data-remove{
+  border: none;
+  background-color: #eeeeee;
+}
+.data:nth-child(2n+1){
+  background-color: lightgray;
+}
+/*footer*/
+footer{
+  text-align: center;
+  font-size: 18px;
+}
