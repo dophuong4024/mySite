@@ -1,0 +1,69 @@
+<!--
+ File: /pdo@cs2:~/public_html/index.html
+ 91.461 Assignment - Homework 6: Creating an Interactive Dynamic Table
+Phuong N. Do, UMass Lowell Computer Science, phuong_do@student.uml.edu
+ Copyright (c) 2020 by Phuong N.Do. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+ updated by PND on NOVEMBER 10, 2020 at 10:10 PM
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GUI HW5</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+
+<!--Form to input values-->
+  <form id ="table_form">
+    <fieldset>
+      <legend>multiplication Table:</legend>
+      <ul>
+        <li>Input the minimum and maximum value of the row and colum to create the multiplication table.</li>
+        <br>
+        <li>The number should be greater or equal than -100 and less or equal than 100.</li>
+        <br>
+        <li>Click <b>Submit</b> to create table and <b>Reset</b> to clear the form.</li>
+      </ul>
+      <br>
+      <label for="minRow">Minimum Row Value:</label>
+      <br>
+      <input type="number" id="min_row" name="min_row" placeholder="Enter number here"><span id="min_row_error"></span>
+    <br>
+    <label for="maxRow">Maximum Row Value:</label>
+    <br>
+    <input type="number" id="max_row" name="max_row" placeholder="Enter number here"><span id="max_row_error"></span>
+    <br>
+    <br>
+
+    <label for="minCol">Minimum Column Value:</label>
+    <br>
+    <input type="number" id="min_column" name ="min_column" placeholder="Enter number here"><span id="min_column_error"></span>
+    <br>
+    <label for="maxCol">Maximum Column Value:</label>
+    <br>
+    <input type="number" id="max_column" name ="max_column" placeholder="Enter number here"><span id="max_column_error"></span>
+    <br>
+    <button type="submit"  id="Submit_button">Submit</button>
+    <button type="reset"  id="reset">Reset</button>
+
+
+  </fieldset>
+  </form>
+  <div id="container"  class = "overflow"></div>
+
+
+  <!--Footer-->
+  <footer id="footer">
+      <p>Copyright &copy; 2020 by Phuong Do</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  <script src="JS/validator.js"></script>
+
+</body>
+</html>

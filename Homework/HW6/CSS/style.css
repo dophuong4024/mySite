@@ -1,0 +1,117 @@
+/*
+ File: /pdo@cs2:~/CSS/style.css
+ 91.461 Assignment - Homework 6: Creating an Interactive Dynamic Table
+Phuong N. Do, UMass Lowell Computer Science, phuong_do@student.uml.edu
+ Copyright (c) 2020 by Phuong N.Do. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+ updated by PND on November 9th, 2020 at 12:10 PM
+*/
+/*General setting for body and information*/
+body {
+  background-color: #53acac;
+  margin: 40px 80px;
+}
+
+label {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*Button boxes and button*/
+#reset, #Submit_button {
+  margin-top: 15px;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 10px 10px;
+}
+
+#Submit_button {
+  background-color: #53acac;
+}
+
+/*container of form + multiplication table*/
+fieldset {
+  background-color: #eeeeee;
+  width: auto;
+  position: relative;
+}
+
+legend {
+  background-color: Teal;
+  color: white;
+  font-weight: bolder;
+  padding: 5px 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: 2px Turquoise solid;
+}
+input{
+  margin-bottom: 10px;
+  width: 220px;
+  height: 25px;
+  font-size: 15px;
+}
+
+/*Table and data setting*/
+.overflow {
+  max-height: 50vh;
+  min-height: 20vh;
+  margin-top: 10px;
+  overflow: scroll;
+}
+
+table{
+  border-collapse: collapse;
+  text-align: right;
+  margin: auto;
+}
+
+td.table_header:nth-child(n+1) {
+ background-color:Turquoise	;
+ font-weight: bold;
+ border-right: 2px solid black;
+ border-bottom: 2px solid black;
+
+}
+td{
+border: 1px solid black;
+background-color: #eeeeee;
+width: 30px;
+padding-right: 2px;
+padding-left: 5px;
+}
+
+/* Remove first box of Table*/
+#data-remove{
+  border: none;
+  background-color: #53acac;
+}
+.data:nth-child(2n+1){
+  background-color: lightgray;
+}
+/*footer*/
+footer{
+  text-align: center;
+  font-size: 18px;
+}
+
+/*Styling error with red tone*/
+.error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  margin-right: 20px;
+}
+
+/*Styling Warning with yellow tone*/
+span{
+  color: darkorange;
+  background-color: Khaki;
+  border-color: #ebccd1;
+  margin-left: 20px;
+  font: 20px bold;
+}
