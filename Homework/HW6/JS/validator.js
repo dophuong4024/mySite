@@ -61,7 +61,7 @@ $().ready(function(){
   });
 
 });
-
+//remove all warning when changing input value
 document.getElementById('min_row').addEventListener("change",removeWarning);
 document.getElementById('max_row').addEventListener("change",removeWarning);
 document.getElementById('min_column').addEventListener("change",removeWarning);
