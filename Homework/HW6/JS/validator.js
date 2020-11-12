@@ -62,6 +62,17 @@ $().ready(function(){
 
 });
 
+document.getElementById('min_row').addEventListener("change",removeWarning);
+document.getElementById('max_row').addEventListener("change",removeWarning);
+document.getElementById('min_column').addEventListener("change",removeWarning);
+document.getElementById('max_column').addEventListener("change",removeWarning);
+
+function removeWarning(){
+  document.getElementById("min_row_error").innerHTML = "";
+  document.getElementById("max_row_error").innerHTML = "";
+  document.getElementById("min_column_error").innerHTML = "";
+  document.getElementById("max_column_error").innerHTML = "";
+}
 //Fuction to create table*/
 function createTable() {
   var startX = document.getElementById("min_row").value;
