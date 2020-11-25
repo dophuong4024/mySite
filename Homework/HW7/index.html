@@ -1,0 +1,95 @@
+<!--
+ File: /pdo@cs2:~/public_html/index.html
+ 91.461 Assignment - Homework 7: Using the jQuery UI Slider and Tab Widgets
+Phuong N. Do, UMass Lowell Computer Science, phuong_do@student.uml.edu
+ Copyright (c) 2020 by Phuong N.Do. All rights reserved. May be
+freely copied or excerpted for educational purposes with credit to the
+author.
+ updated by PND on NOVEMBER 20, 2020 at 10:10 PM
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GUI HW7</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+         rel = "stylesheet">
+  </head>
+  <body>
+
+<!--Form to input values-->
+<div id = box>
+  <form id ="table_form">
+    <fieldset>
+      <legend>multiplication Table:</legend>
+      <ul>
+        <li>Input the minimum and maximum value of the row and colum to create the multiplication table.</li>
+        <br>
+        <li>The number should be greater or equal than -100 and less or equal than 100.</li>
+        <br>
+        <li>Click <b>Submit</b> to create table and <b>Reset</b> to clear the form.</li>
+      </ul>
+      <br>
+      <!--Min Row-->
+      <label for="minRow">Minimum Row Value:</label>
+      <br>
+      <div class="slider" id="minR_slider"></div> <!--Slider-->
+      <h4> -OR- </h4>
+      <input type="number" class='input-box' id="min_row" name="min_row" value="0">
+      <span id="min_row_error"></span>
+      <br>
+    <!--Max Row-->
+    <label for="maxRow">Maximum Row Value:</label>
+    <br>
+    <div class="slider" id="maxR_slider"></div> <!--Slider-->
+    <h4> -OR- </h4>
+    <input type="number" class='input-box' id="max_row" name="max_row" value="10">
+    <span id="max_row_error"></span>
+  <br>
+    <br>
+    <!--Min Column-->
+    <label for="minCol">Minimum Column Value:</label>
+    <br>
+    <div class="slider" id="minC_slider"></div> <!--Slider-->
+    <h4> -OR- </h4>
+    <input type="number" class='input-box' id="min_column" name="min_column" value="0">
+    <span id="min_column_error"></span>
+    <br>
+    <!--Max Column-->
+    <label for="maxCol">Maximum Column Value:</label>
+    <br>
+    <div class="slider" id="maxC_slider"></div> <!--Slider-->
+    <h4> -OR- </h4>
+    <input type="number" class='input-box' id="max_column" name="max_column" value="10" de>
+    <span id="max_column_error"></span>
+    <br>
+    <!--Button-->
+    <button type="create" id="create_button">Add Table To Tab</button>
+    <button type="delete" id="delete_button">Delete Selected Tab</button>
+    <button type="reset"  id="reset">Reset</button>
+    <div id="container"  class = "overflow"></div>
+
+    </fieldset>
+  </form>
+
+  <!--Tab handler-->
+    <div id="tabs">
+                <ul id="list">
+                </ul>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer id="footer">
+      <p>Copyright &copy; 2020 by Phuong Do</p>
+  </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="JS/hw7.js"></script>
+
+
+</body>
+</html>
