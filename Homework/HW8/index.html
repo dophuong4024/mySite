@@ -1,0 +1,90 @@
+<!--
+File: /pdo@cs2:~/public_html/index.html
+91.461 Assignment - Homework 8: Implementing a Bit of Scrabble with Drag-and-Drop
+Phuong N. Do, UMass Lowell Computer Science, phuong_do@student.uml.edu
+Copyright (c) 2020 by Phuong N.Do. All rights reserved. May be
+freely copied or excerpted for educational purposes with credit to the
+author.
+updated by PND on DECEMBER 9, 2020 at 12:10 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>GUI HW8</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+  rel = "stylesheet">
+</head>
+<body>
+
+  <!--Form to input values-->
+  <div id = box>
+    <form id ="table_form">
+      <fieldset>
+        <legend>A Bit of SCRABBLE with Drag-and-Drop</legend>
+        <ul id ="rules">
+          <li>Player is given 8 tiles to form a word and the tiles are placed on the rack below.</li>
+          <li>On the board, the slots mark the <i>DOUBLE WORD</i> Squares and <i>TRIPLE WORD</i> Squares which are worth more points.</li>
+          <li>The letter is used to construct the words and its number indicates its point value.</li>
+          <li>Each word score will be added up to total score.</li>
+          <li><span id="Note"><u>Note: Letters can only be drop next to the previous letter to make a new word!</u></span></li>
+
+        </ul>
+        <hr>
+        <br>
+
+        <!--Word Score + Total Score + Tile Remainning + Word created-->
+        <div id="scoreBoard" class ="info">
+          Word: <span id="info-word">___</span>
+          Word Score: <span id="word-score">0</span>
+          Total Score: <span id="total-score">0</span>
+          Tiles remaining: <span id="tile-remaining">93</span>
+        </div>
+
+        <!--BOARD set-up-->
+        <div id="board">
+        </div>
+
+        <!--Message -->
+        <div class="msg" id ="msg">
+          <p>This part is used for message
+          </p>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <!--Tile Rack-->
+        <div id="rack-box">
+          <div class="gif" id ="gif">
+            <img src="img/cat.gif" alt="cat" width="220" height="220">
+          </div>
+          <div class="rack" id ="rack">
+          </div>
+        </div>
+
+        <!-- Control buttons -->
+        <div class="Button">
+          <button  id="submit_Bt" >Submit Word </button>
+          <button id="restart_Bt" onclick="restart()">Reset Game</button>
+        </div>
+
+      </fieldset>
+    </form>
+
+
+    <!--Footer-->
+    <footer id="footer">
+      <p>Copyright &copy; 2020 by Phuong Do</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/scrabble.js"></script>
+
+
+  </body>
+  </html>

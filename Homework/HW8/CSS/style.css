@@ -1,0 +1,131 @@
+/*
+File: /pdo@cs2:~/CSS/style.css
+91.461 Assignment - Homework 8: A BIT OF SCRABBLE WITH DRAG-AND-DROP
+Phuong N. Do, UMass Lowell Computer Science, phuong_do@student.uml.edu
+Copyright (c) 2020 by Phuong N.Do. All rights reserved. May be
+freely copied or excerpted for educational purposes with credit to the
+author.
+updated by PND on December 11th, 2020 at 9:10 PM
+*/
+/*General setting for body and information*/
+body {
+  background-color: #53acac;
+  margin: 40px 80px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/*Main box for the game*/
+fieldset {
+  background-color: #eeeeee;
+  width: auto;
+  min-width: 900px;
+  max-width: 1000px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/*Title box*/
+legend {
+  background-color: Teal;
+  color: white;
+  font-weight: bolder;
+  padding: 5px 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: 2px Turquoise solid;
+}
+/*Rules styling*/
+#rules{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#rules li{
+  margin-bottom: 5px;
+}
+
+span{
+  margin-right: 30px;
+  color: red;
+}
+/*Player information: Score, word created, tiles remaining*/
+.info {
+  font-size: 20px;
+  margin-left:100px;
+}
+
+/*set up Scrabble Board*/
+
+#board{
+  min-width: 800px;
+  margin-left: 100px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.boardDrop{
+  display: inline-block;
+  width: 81px;
+  height: 87px;
+  margin: 1px;
+  border-width: 1px;
+  border: solid 4px;
+}
+
+/*Message for player*/
+.msg{
+  background-color: red;
+  color: black;
+  margin-top:20px;
+  margin-left:250px ;
+  width: 400px;
+  text-align: center;
+  font-weight: bold;
+}
+/*gif and cat layout*/
+div#rack-box{
+  display: inline-block;
+}
+.gif{
+  margin-left: 10px;
+  float: left;
+}
+/*Rack*/
+.rack{
+  background-image: url("../img/scrabble-tile-holder.png");
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 200px;
+  float: right;
+  margin-left: 20px;
+}
+/*Random letters set up on rack*/
+#rack img{
+  width: 81px;
+  height: 87px;
+  margin-top: 50px;
+}
+
+/*Button Styling*/
+button{
+  margin-top: 15px;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 10px 10px;
+}
+#submit_Bt{
+  margin-left: 400px;
+  background-color:#53acac ;
+}
+
+/*footer*/
+footer{
+  text-align: center;
+  font-size: 18px;
+}
